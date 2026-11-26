@@ -1,0 +1,678 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    background: var(--color-white);
+    color: var(--color-black);
+}
+@font-face {
+  font-family: 'Poppins';
+  src: url(fonts/Shopins.ttf) format('ttf');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+
+.header {
+    padding: 25px 0;
+}
+
+.header__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__logo {
+    color: var(--color-orange);
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.header__nav {
+    display: flex;
+    gap: 35px;
+}
+
+.header__nav a {
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.header__nav a:hover {
+    color: var(--color-orange);
+}
+
+.header__buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.button__sign {
+    padding: 12px 25px;
+    border-radius: 6px;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.button {
+    padding: 12px 25px;
+    border-radius: 6px;
+    background: var(--color-orange);
+    color: var(--color-white);
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.button:hover {
+    opacity: 0.8;
+    transform: translateY(-2px);
+}
+
+
+
+.hero {
+    padding: 80px 0 40px;
+    background: var(--color-beige);
+    border-radius: 20px;
+}
+
+.hero__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.hero__content {
+    max-width: 450px;
+}
+
+.hero__title {
+    font-size: 48px;
+    line-height: 1.15;
+    margin-bottom: 20px;
+}
+
+.hero__title span {
+    color: var(--color-orange);
+}
+
+.hero__text {
+    color: var(--color-gray);
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+.hero__car {
+    width: 55%;
+    max-width: 600px;
+    object-fit: contain;
+}
+
+/* ===== BOOKING ===== */
+
+.booking {
+    width: 100%;
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 25px 30px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+
+    background: var(--color-white);
+    border-radius: 12px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.08);
+}
+
+.booking_item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex: 1;
+}
+
+.booking_icon {
+    width: 42px;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--color-beige);
+    border-radius: 50%;
+    font-size: 20px;
+}
+
+.booking_info {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.booking_title {
+    margin: 0;
+    font-size: 15px;
+    color: var(--color-black);
+}
+
+.booking_input {
+    width: 100%;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-family: inherit;
+    font-size: 13px;
+    color: var(--color-gray);
+}
+
+.booking_button {
+    padding: 14px 30px;
+    background: var(--color-orange);
+    color: white;
+    border-radius: 6px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.booking_button:hover {
+    opacity: 0.8;
+    transform: translateY(-2px);
+}
+
+@media (max-widht: 780px) {
+    .booking {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .booking_item {
+        width: 100%;
+    }
+
+    .booking_button {
+        width: 100%;
+    }
+}
+
+
+
+.steps {
+    padding: 80px 0;
+    text-align: center;
+}
+
+.steps__title {
+    font-size: 32px;
+    margin-bottom: 50px;
+}
+
+.steps__list {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+}
+
+.steps__item {
+    max-width: 200px;
+}
+
+.steps__icon {
+    font-size: 35px;
+    color: var(--color-orange);
+    margin-bottom: 20px;
+}
+
+.steps__item h3 {
+    margin-bottom: 10px;
+}
+
+.steps__item p {
+    color: var(--color-gray);
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+
+
+.brands {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 30px;
+    padding: 40px 0;
+    flex-wrap: wrap;
+}
+
+.brands img {
+    max-width: 110px;
+    height: auto;
+    object-fit: contain;
+}
+
+
+
+.advantages {
+    padding: 80px 0;
+}
+
+.advantages__inner {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+.advantages__image {
+    width: 50%;
+    object-fit: contain;
+}
+
+.advantages__content {
+    flex: 1;
+}
+
+.advantages__title {
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+.advantages__item {
+    margin-bottom: 25px;
+}
+
+.advantages__item h3 {
+    font-size: 17px;
+    margin-bottom: 8px;
+}
+
+.advantages__item p {
+    color: var(--color-gray);
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+
+
+.cars {
+    padding: 80px 0;
+    text-align: center;
+}
+
+.cars__title {
+    font-size: 32px;
+    margin-bottom: 45px;
+}
+
+.cars__list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+.cars__card {
+    padding: 20px;
+    border: 1px solid #eeeeee;
+    border-radius: 12px;
+    transition: 0.3s;
+}
+
+.cars__card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+.cars__image {
+    width:
+    00%;
+    height: 130px;
+    object-fit: contain;
+}
+
+.cars__name {
+    font-size: 17px;
+    margin: 15px 0;
+}
+
+.cars__price {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 15px 0;
+}
+
+.cars__button {
+    display: block;
+    padding: 12px;
+    background: var(--color-orange);
+    color: white;
+    border-radius: 6px;
+}
+
+.reviews {
+    padding: 80px 0;
+    text-align: center;
+}
+
+.reviews__title {
+    font-size: 32px;
+    margin-bottom: 45px;
+}
+
+.reviews__list {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.reviews__card {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    max-width: 450px;
+    padding: 20px;
+    text-align: left;
+}
+
+.reviews__image {
+    width: 140px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.reviews__text {
+    color: var(--color-gray);
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.reviews__rating {
+    color: var(--color-orange);
+    margin-bottom: 12px;
+}
+
+
+.download {
+    padding: 80px 0;
+}
+
+.download__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.download__content {
+    max-width: 450px;
+}
+
+.download__title {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.download__title span {
+    color: var(--color-orange);
+}
+
+.download__text {
+    color: var(--color-gray);
+    margin-bottom: 25px;
+}
+
+.download__image {
+    width: 40%;
+    max-width: 350px;
+    object-fit: contain;
+}
+
+
+.footer {
+    background: var(--color-black);
+    color: var(--color-white);
+    padding: 60px 0 25px;
+}
+
+.footer__inner {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    gap: 40px;
+}
+
+.footer__logo {
+    color: var(--color-orange);
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.footer__links {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.footer__links a {
+    color: #cccccc;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.footer__links a:hover {
+    color: var(--color-orange);
+}
+
+.footer__copyright {
+    border-top: 1px solid #444;
+    margin-top: 40px;
+    padding-top: 20px;
+    color: #aaaaaa;
+    font-size: 13px;
+    text-align: center;
+}
+
+
+@media(max-width:992px) {
+
+    .hero__title {
+        font-size: 36px;
+    }
+
+    .cars__list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .advantages__inner {
+        gap: 30px;
+    }
+
+    .footer__inner {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .header__inner {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .header__nav {
+        gap: 15px;
+        flex-wrap: wrap;
+    }
+
+    .hero__inner {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero__car {
+        width: 100%;
+    }
+
+    .booking {
+        flex-direction: column;
+    }
+
+    .steps__list {
+        flex-direction: column;
+        align-items: center;
+        gap: 35px;
+    }
+
+    .advantages__inner {
+        flex-direction: column;
+    }
+
+    .advantages__image {
+        width: 100%;
+    }
+
+    .reviews__list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .download__inner {
+        flex-direction: column;
+        text-align: center;
+        gap: 30px;
+    }
+
+    .download__image {
+        width: 70%;
+    }
+}
+
+@media(max-width: 480px) {
+
+    .container {
+        padding: 0 15px;
+    }
+
+    .hero__title {
+        font-size: 30px;
+    }
+
+    .cars__list {
+        grid-template-columns: 1fr;
+    }
+
+    .reviews__card {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer__inner {
+        grid-template-columns: 1fr;
+    }
+
+    .header__nav {
+        display: none;
+    }
+
+    .download__title {
+        font-size: 28px;
+    }
+} 
+/* HERO */
+.hero {
+    position: relative;
+    overflow: hidden;
+    min-height: 600px;
+    padding: 80px 0;
+    background: var(--color-white);
+}
+
+/* Большой логотип на фоне */
+.hero::before {
+    content: "";
+    position: absolute;
+    width: 750px;
+    height: 750px;
+    right: -100px;
+    top: -80px;
+
+    background-image: url("../images/logo-bg.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+
+    opacity: 0.07;
+    z-index: 0;
+    pointer-events: none;
+}
+
+.hero__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    z-index: 1;
+}
+
+.hero__content {
+    max-width: 450px;
+}
+
+.hero__content h1 {
+    font-size: 48px;
+    line-height: 1.15;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.hero__content h1 span {
+    color: #1572D3;
+}
+
+.hero__content p {
+    color: var(--color-gray);
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+.hero__buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.hero__buttons a {
+    background: #141414;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 6px;
+}
+
+.hero__image img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    position: relative;
+    z-index: 1;
+}
